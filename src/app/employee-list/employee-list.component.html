@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+        <div class="row">
+            <h3 class="text-center"> Create Employee </h3>
+            <hr />
+            <div class="card-body">
+                <form (ngSubmit)="onSubmit()">
+
+                       <div class="form-group">
+                        <label> Id</label>
+                        <input type="text" class="form-control" id="id" [(ngModel)]="employee.id"
+                            name="id">
+                    </div>
+                    <div class="form-group">
+                        <label> Title</label>
+                        <input type="text" class="form-control" id="title" [(ngModel)]="employee.title"
+                            name="title">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Description</label>
+                        <input type="text" class="form-control" id="description" [(ngModel)]="employee.description"
+                            name="description">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Published</label>
+                        <input type="text" class="form-control" id="emailId" [(ngModel)]="employee.published"
+                            name="published">
+                    </div>
+
+                    <br />
+                    <button class="btn btn-success" type="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
